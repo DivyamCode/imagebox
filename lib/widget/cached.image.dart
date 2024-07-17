@@ -1,9 +1,9 @@
 import 'dart:typed_data';
 // import 'package:cached_image/box/image.dart';
+import 'package:catchimagebox/model/cachedimage.model.dart';
 import 'package:flutter/material.dart';
-import 'package:imagebox/helper/downloader.dart';
-import 'package:imagebox/model/image.dart';
-import 'package:imagebox/service/image.box.dart';
+import 'package:catchimagebox/helper/downloader.dart';
+import 'package:catchimagebox/service/image.box.dart';
 
 class CachedImage extends StatefulWidget {
   const CachedImage(

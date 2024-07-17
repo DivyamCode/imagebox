@@ -45,8 +45,7 @@ class MyWidget extends StatelessWidget {
         title: Text('Catched Image Example'),
       ),
       body: Center(
-        child: CachedImage(
-          'assets/images/sample_image.png',
+        child:CachedImage(imageName:'/150/92c952',
           width: 200,
           height: 200,
         ),
@@ -89,10 +88,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you find this package helpful, please give it a ⭐ on [GitHub](https://github.com).
 
 Happy coding! 😊
-
-
-<!-- ## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more. -->
