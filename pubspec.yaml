@@ -1,6 +1,6 @@
 name: catchimagebox
 description: "CatchImageBox streamlines image caching in Flutter, enhancing performance and UX."
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/DivyamCode/imagebox
 
 environment:
