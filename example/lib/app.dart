@@ -1,6 +1,5 @@
-
 import 'package:flutter/material.dart';
-import 'package:imagebox/imagebox.dart';
+import 'package:catchimagebox/catchimagebox.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -29,8 +28,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -68,11 +65,12 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            CachedImage(imageName:'/150/92c952',),
+            CachedImage(
+              imageName: '/150/92c952',
+            ),
             Text(
               'You have pushed the button this many times:',
             ),
-            
           ],
         ),
       ),

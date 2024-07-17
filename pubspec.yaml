@@ -1,6 +1,6 @@
-name: imagebox
-description: "A new Flutter package project."
-version: 0.0.1
+name: catchimagebox
+description: "CatchImageBox streamlines image caching in Flutter, enhancing performance and UX."
+version: 0.0.2
 repository: https://github.com/DivyamCode/imagebox
 
 environment:

@@ -6,11 +6,10 @@ class ImageDownloader {
   final Map<String, String>? authHeader;
   final String imagePath;
 
-  ImageDownloader({
-    required this.baseUrl,
-    required this.authHeader,
-    required this.imagePath
-  });
+  ImageDownloader(
+      {required this.baseUrl,
+      required this.authHeader,
+      required this.imagePath});
 
   /// Configures and returns a Dio instance with the necessary headers.
   Dio _getDioInstance() {
@@ -19,7 +18,8 @@ class ImageDownloader {
       headers: authHeader,
       responseType: ResponseType.bytes, // Ensure we get the response as bytes
     ));
-    dio.interceptors.add(LogInterceptor(responseBody: false)); // Optional: Add logging for debugging
+    dio.interceptors.add(LogInterceptor(
+        responseBody: false)); // Optional: Add logging for debugging
     return dio;
   }
 
@@ -31,7 +31,8 @@ class ImageDownloader {
       if (response.statusCode == 200) {
         return response.data as Uint8List;
       } else {
-        throw Exception('Failed to download image. Status code: ${response.statusCode}');
+        throw Exception(
+            'Failed to download image. Status code: ${response.statusCode}');
       }
     } catch (e) {
       throw Exception('Failed to download image: $e');

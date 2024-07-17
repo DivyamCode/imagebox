@@ -1,15 +1,13 @@
-
-
-import 'package:imagebox/box/image.dart';
-import 'package:imagebox/service/image.store.dart';
+import 'package:catchimagebox/box/image.dart';
+import 'package:catchimagebox/service/image.store.dart';
 
 class ImageBoxService {
   // bool initDone = false;
   static late ImageStore? _imageStore;
   static String? _baseUrl;
 
-  static setBaseUrl(String baseurl){
-      ImageBoxService._baseUrl = baseurl;
+  static setBaseUrl(String baseurl) {
+    ImageBoxService._baseUrl = baseurl;
   }
 
   static String? get getBaseUrl => ImageBoxService._baseUrl;
@@ -32,13 +30,13 @@ class ImageBoxService {
     }
   }
 
-  static bool isInitDone(){
-      try {
-        ImageBoxService._imageStore!.cachedImageBox.findByName('');
-        return true;
-      } catch (e) {
-        return false;
-      }
+  static bool isInitDone() {
+    try {
+      ImageBoxService._imageStore!.cachedImageBox.findByName('');
+      return true;
+    } catch (e) {
+      return false;
+    }
   }
 
   static CachedImageBox get getCachedImgBox =>
